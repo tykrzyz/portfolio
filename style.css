@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+header{
+    background-color: gainsboro;
+}
+
+main{
+  height: 500px;
+  background-image: url("images/background/index-bg.jpg");
+  opacity: 20%;
+  background-color: #cccccc;
+}
+
+footer{
+  background-color: gainsboro;
+}
+
+h1{
+  font-size: 50px;
+  margin: 0px;
+}
+article h3{
+  margin: 0px;
+  background: black;
+  width: 170px;
+  color: white;
+}
+
+header nav {
+  text-align: center;
+  
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  padding: 0px;
+}
+
+
+a:link {color: white}
+a:visited {color: white}
+a:hover {color: gray}
+a:active {color: white}
+
+footer a:link {color: blue}
