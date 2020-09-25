@@ -3,7 +3,8 @@
 }
 
 header{
-    background-color: gainsboro;
+    background-color: black;
+    color: white;
 }
 
 main{
@@ -23,14 +24,15 @@ h1{
 }
 article h3{
   margin: 0px;
-  background: black;
+  background: white;
   width: 170px;
-  color: white;
+  color: black;
 }
 
 header nav {
   text-align: center;
-  
+  border-color: black;
+  border-width: 20px
 }
 
 .right {
@@ -41,9 +43,9 @@ header nav {
 }
 
 
-a:link {color: white}
-a:visited {color: white}
+a:link {color: black}
+a:visited {color: black}
 a:hover {color: gray}
-a:active {color: white}
+a:active {color: black}
 
 footer a:link {color: blue}
