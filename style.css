@@ -5,17 +5,36 @@
 header{
     background-color: black;
     color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+nav article {
+  text-align: center;
+  border-color: black;
+  border-width: 20px;
 }
 
 main{
   height: 500px;
   background-image: url("images/background/index-bg.jpg");
+  background-size: cover;
   opacity: 20%;
   background-color: #cccccc;
+  
 }
 
 footer{
+  letter-spacing: 10px;
+  text-align: center;
   background-color: gainsboro;
+  height: 84px;
+  padding: 10px;
+}
+
+h4{
+  margin: 0;
+  padding-top: 10px;
 }
 
 h1{
@@ -23,16 +42,15 @@ h1{
   margin: 0px;
 }
 article h3{
+
   margin: 0px;
   background: white;
   width: 170px;
   color: black;
 }
 
-header nav {
-  text-align: center;
-  border-color: black;
-  border-width: 20px
+article h3{
+  padding-top: 10px;
 }
 
 .right {
