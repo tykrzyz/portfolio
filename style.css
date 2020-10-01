@@ -7,21 +7,51 @@ header{
     color: white;
     padding-top: 10px;
     padding-left: 10px;
+    height: 110px;
+    position: relative;
 }
 
-nav article {
+nav {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  border: 1px black solid;
   text-align: center;
-  border-color: black;
-  border-width: 20px;
+}
+
+h2{
+  font-size: 35px;
 }
 
 main{
-  height: 500px;
+  position: relative;
+  height: 1000px;
   background-image: url("images/background/index-bg.jpg");
   background-size: cover;
-  opacity: 20%;
+  opacity: 100%;
   background-color: #cccccc;
   
+}
+
+p {
+  font-size: 25px;
+}
+
+ul {
+  text-align: left;
+  font-size: 25px;
+}
+
+main section{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 40%;
+  width: 40%;
+  border: 5px black solid;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
 }
 
 footer{
@@ -47,9 +77,6 @@ article h3{
   background: white;
   width: 170px;
   color: black;
-}
-
-article h3{
   padding-top: 10px;
 }
 
@@ -65,5 +92,3 @@ a:link {color: black}
 a:visited {color: black}
 a:hover {color: gray}
 a:active {color: black}
-
-footer a:link {color: blue}
