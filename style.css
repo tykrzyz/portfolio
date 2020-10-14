@@ -20,12 +20,12 @@ nav {
 }
 
 h2{
-  font-size: 35px;
+  font-size: 3.5vmin;
 }
 
 main{
   position: relative;
-  height: 1000px;
+  min-height: calc(100vh - 194px);
   background-image: url("images/background/index-bg.jpg");
   background-size: cover;
   opacity: 100%;
@@ -34,12 +34,12 @@ main{
 }
 
 p {
-  font-size: 25px;
+  font-size: 2.5vmin;
 }
 
 ul {
   text-align: left;
-  font-size: 25px;
+  font-size: 2.5vmin;
 }
 
 main section{
@@ -59,7 +59,8 @@ footer{
   text-align: center;
   background-color: gainsboro;
   height: 84px;
-  padding: 10px;
+  padding-top: 10px;
+  margin: 0px;
 }
 
 h4{
