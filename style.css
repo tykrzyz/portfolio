@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: 'Baloo Tammudu 2', serif; /*Font from google library*/
+}
 
 header{
-    background-color: black;
+    background-color: black;  /*Nice contrasting black background for the header*/
     color: white;
     padding-top: 10px;
     padding-left: 10px;
@@ -12,7 +15,7 @@ header{
 }
 
 nav {
-  position:absolute;
+  position:absolute;  /*Nav bar that stands out from the header*/
   bottom:0px;
   right:0px;
   border: 1px black solid;
@@ -20,11 +23,12 @@ nav {
 }
 
 h2{
+  margin-bottom: 0px;
   font-size: 3.5vmin;
 }
 
 main{
-  position: relative;
+  position: relative; /*The bulk of the page, designed to fill the entire display, minus the header and the footer*/
   min-height: calc(100vh - 194px);
   background-image: url("images/background/index-bg.jpg");
   background-size: cover;
@@ -34,6 +38,7 @@ main{
 }
 
 p {
+  margin: 0px;
   font-size: 2.5vmin;
 }
 
@@ -42,7 +47,7 @@ ul {
   font-size: 2.5vmin;
 }
 
-main section{
+main section{ /*White boxes with black borders designed to store content stylishly*/
   position: absolute;
   top: 5%;
   left: 5%;
@@ -54,7 +59,7 @@ main section{
   text-align: center;
 }
 
-footer{
+footer{   /*Just enough space to fit external comunnication icons*/
   letter-spacing: 10px;
   text-align: center;
   background-color: gainsboro;
@@ -79,13 +84,6 @@ article h3{
   width: 170px;
   color: black;
   padding-top: 10px;
-}
-
-.right {
-  position: absolute;
-  right: 0px;
-  width: 150px;
-  padding: 0px;
 }
 
 

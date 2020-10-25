@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      body {
-        font-family: 'Baloo Tammudu 2', serif;
-      }
-    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Tyler Krzyzanowski</title>
@@ -19,7 +14,7 @@
   </head>
   <body>
     
-    <header>
+    <header> <!--Holds the title of the page and the navigation bar-->
         <section>
           <h1><strong>Tyler Krzyzanowski</strong></h1>
           <h3>Full Stack Developer</h3>
@@ -36,7 +31,7 @@
     </header>
 
     <main>
-      <section>
+      <section>       <!--Introduction section-->
         <h2>Hi, I'm Tyler Krzyzanowski!</h2>
         <p>I'm a Full Stack developer from Pittsburgh, Pennsylvania.</p>
         <p>Some of my interests include:</p>
@@ -47,30 +42,35 @@
         </ul>
       </section>
 
-      <section style="top: 50%; width: 90%">
+      <section style="top: 50%; width: 90%"> <!--The about me section, centered vartically and placed at the bottom of the main div-->
         <h2>About Me</h2>
         <p>I've always had an interest in computers, both hardware and software.</p>
         <p>At some point, I knew I was passionate about software engineering and web development, and I decided to dedicate myself to it.</p>
         <p>I wanted to make sure that my career extended past my professional life. I strive to create and complete projects that I am personally invested in.</p>
         <p>My long term goal is to break into the Artificial Inteligence or Virtual Reality market, but I also enjoy learning about web design and development.</p>
+        <hr>
+        <p>Here are some qualities that stick out from other potential candidates:</p>
+        <ol>
+          <li>I have a strong ability to problem solve on my own, but I work best on a team and I'd consider myself a good leader</li>
+          <li>Every task that I begin, I put in 110% and see it through to the end</li>
+          <li>I am efficient with both my code and my time</li>
+        </ol>
       </section>
 
-      <section style="left: 50%; width: 20%;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57789.05638003001!2d-80.00431431171664!3d40.42738618912682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e0!3m2!1sen!2sus!4v1602693491443!5m2!1sen!2sus"
-                height= 100%; width= 100%; frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+      <section style="left: 50%; width: 16%; height: 0; padding-bottom: 16%;"> <!--Picture displaying my home city, Pittsburgh-->
+        <img src="images/pittsburgh.png" alt="Pittsburgh" style="height: 100%; width: 100%; position: absolute; left: 0;">
       </section>
 
-      <section style="left: 75%; width: 16%; height: 0; padding-bottom: 16%;">
+      <section style="left: 75%; width: 16%; height: 0; padding-bottom: 16%;"> <!--My Headshot-->
         <img src="images/headshot.jpg" alt="Tyler Krzyzanowski" style="height: 100%; width: 100%; position: absolute; left: 0;">
       </section>
     </main>
 
-    <footer>
+    <footer> <!--Contains all the external links for communication-->
       <a href="mailto:tykrzyz@aim.com"> <img src="images/icons/email-icon.png" alt="E-Mail"></a>
       <a href="https://www.github.com/tykrzyz" target="_blank"><img src="images/icons/github-icon.png" alt="GitHub"></a>
        <a href="https://www.linkedin.com/in/tyler-krzyzanowski" target="_blank"><img src="images/icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <!--<h4>Email Me: <a href="mailto:tykrzyz@aim.com">tykrzyz@aim.com</a>
-          Find Me On Github: </h4>-->
+      
     </footer>
     <script src="script.js"></script>
   </body>
