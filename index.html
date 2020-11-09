@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tyler Krzyzanowski</title>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2">
@@ -31,7 +31,8 @@
     </header>
 
     <main>
-      <section>       <!--Introduction section-->
+      <div class="wrapper">
+      <section class="item border">       <!--Introduction section-->
         <h2>Hi, I'm Tyler Krzyzanowski!</h2>
         <p>I'm a Full Stack developer from Pittsburgh, Pennsylvania.</p>
         <p>Some of my interests include:</p>
@@ -42,29 +43,36 @@
         </ul>
       </section>
 
-      <section style="top: 50%; width: 90%"> <!--The about me section, centered vartically and placed at the bottom of the main div-->
-        <h2>About Me</h2>
-        <p>I've always had an interest in computers, both hardware and software.</p>
-        <p>At some point, I knew I was passionate about software engineering and web development, and I decided to dedicate myself to it.</p>
-        <p>I wanted to make sure that my career extended past my professional life. I strive to create and complete projects that I am personally invested in.</p>
-        <p>My long term goal is to break into the Artificial Inteligence or Virtual Reality market, but I also enjoy learning about web design and development.</p>
-        <hr>
-        <p>Here are some qualities that stick out from other potential candidates:</p>
-        <ol>
-          <li>I have a strong ability to problem solve on my own, but I work best on a team and I'd consider myself a good leader</li>
-          <li>Every task that I begin, I put in 110% and see it through to the end</li>
-          <li>I am efficient with both my code and my time</li>
-        </ol>
+      <!--<section style="top: 50%; width: 90%">--> <!--The about me section, centered vartically and placed at the bottom of the main div-->
+      
+
+      <section class="item-half no-bgd"> <!--Picture displaying my home city, Pittsburgh-->
+        <img class= "border" src="images/pittsburgh.png" alt="Pittsburgh">
       </section>
 
-      <section style="left: 50%; width: 16%; height: 0; padding-bottom: 16%;"> <!--Picture displaying my home city, Pittsburgh-->
-        <img src="images/pittsburgh.png" alt="Pittsburgh" style="height: 100%; width: 100%; position: absolute; left: 0;">
+      <section class="item-half no-bgd"> <!--My Headshot-->
+        <img class= "border" src="images/headshot.jpg" alt="Tyler Krzyzanowski">
       </section>
+    </div>
 
-      <section style="left: 75%; width: 16%; height: 0; padding-bottom: 16%;"> <!--My Headshot-->
-        <img src="images/headshot.jpg" alt="Tyler Krzyzanowski" style="height: 100%; width: 100%; position: absolute; left: 0;">
-      </section>
-    </main>
+  <div class="wrapper">
+  <section class="item border">
+    <h2>About Me</h2>
+    <p>I've always had an interest in computers, both hardware and software.</p>
+    <p>At some point, I knew I was passionate about software engineering and web development, and I decided to dedicate myself to it.</p>
+    <p>I wanted to make sure that my career extended past my professional life. I strive to create and complete projects that I am personally invested in.</p>
+    <p>My long term goal is to break into the Artificial Inteligence or Virtual Reality market, but I also enjoy learning about web design and development.</p>
+    <hr>
+    <p>Here are some qualities that stick out from other potential candidates:</p>
+    <ol>
+      <li>I have a strong ability to problem solve on my own, but I work best on a team and I'd consider myself a good leader</li>
+      <li>Every task that I begin, I put in 110% and see it through to the end</li>
+      <li>I am efficient with both my code and my time</li>
+    </ol>
+  </section>
+  </div>
+
+</main>
 
     <footer> <!--Contains all the external links for communication-->
       <a href="mailto:tykrzyz@aim.com"> <img src="images/icons/email-icon.png" alt="E-Mail"></a>
