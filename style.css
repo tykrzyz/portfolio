@@ -133,12 +133,12 @@ footer ul:last-child{
   justify-content: center;
 }
 
-main img{
-  width: 70%;
+.no-bottom-margin{
+  margin-bottom: 0;
 }
 
-label{
-  margin: 10px 0px;
+main img{
+  width: 70%;
 }
 
 @media all and (min-width: 800px){
