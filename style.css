@@ -7,10 +7,9 @@
   flex-direction: column;
 }
 
-.header-wrapper{
+.column-wrapper{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 body {
@@ -21,92 +20,98 @@ header{
     background-color: black;  /*Nice contrasting black background for the header*/
     color: white;
     display: flex;
+    flex-direction: column;
     padding-top: 10px;
     padding-left: 10px;
-    /*height: 110px;
-    position: relative;*/
 }
-
-nav {
-  display: flex;  /*Nav bar that stands out from the header*/
-  justify-self: end;
-  border: 1px black solid;
+header h1{
   text-align: center;
+  margin-bottom: 0;
 }
 
-h2{
-  margin-bottom: 0px;
-  font-size: 30px;
+header h2{
+  text-align: center;
+  margin: 0 0 5px 0;
 }
 
-main{  /*The bulk of the page, designed to fill the entire display, minus the header and the footer*/
-  /*position: relative;
-  min-height: calc(100vh - 194px);*/
+header nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0 10px 0 0;
+}
+
+header nav ul:last-child{
+  margin: 0;
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+main{
   background-image: url("images/background/index-bg.jpg");
   background-size: cover;
   opacity: 100%;
   background-color: #cccccc;
-  
 }
 
-p {
-  margin: 0px;
-  font-size: 20px;
-}
-
-ul {
-  text-align: left;
-  font-size: 20px;
-}
-
-ol {
-  font-size: 20px;
-}
-main section{ /*White boxes with black borders designed to store content stylishly*/
-  /*position: absolute;
-  top: 5%;
-  left: 5%;
-  height: 40%;
-  width: 40%;*/
+main div{
   background-color: white;
   text-align: center;
+  padding: 5px;
 }
+
+main div ul{
+  list-style: none;
+  padding: 0;
+}
+
+button{
+  margin: 0 0px;
+  padding-top: 10px;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
 
 footer{   /*Just enough space to fit external comunnication icons*/
-  letter-spacing: 10px;
-  text-align: center;
+  display: flex;
   background-color: gainsboro;
-  height: 84px;
-  padding-top: 10px;
-  margin: 0px;
-}
-
-h4{
+  flex-direction: row;
+  justify-content: center;
   margin: 0;
   padding-top: 10px;
 }
 
-h1{
-  font-size: 40px;
-  margin: 0px;
-}
-article h3{
-
-  margin: 0px;
-  background: white;
-  /*width: 170px;*/
-  color: black;
-  padding-top: 10px;
+footer ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
+footer ul li a{
+  margin-right: 20px;
+}
+
+footer ul:last-child{
+  margin-right: 0px;
+}
 
 .item-half{
   flex: 0.5;
-  margin: 50px;
+  margin: 20px;
 }
+
 .item{
   flex: 1;
-  margin: 50px;
+  margin: 20px;
 }
 .item-double{
   flex: 2;
@@ -120,33 +125,38 @@ article h3{
 .no-bgd{
   background: none;
 }
+.small-margin{
+  margin: 5px;
+}
+
+.center{
+  justify-content: center;
+}
 
 main img{
-  width: 100%;
+  width: 70%;
+}
+
+label{
+  margin: 10px 0px;
 }
 
 @media all and (min-width: 800px){
-  header h1{
-    font-size: 50px;
-  }
-  h2{
-    font-size: 40px;
+  header nav ul li a:hover{
+    color: #bdbdbd;
   }
 
-  p{
-    font-size: 25px;
-  }
-
-  li{
-    font-size: 25px;
-  }
   .wrapper{
     display: flex;
     flex-direction: row;
   }
-}
 
-a:link {color: black}
-a:visited {color: black}
-a:hover {color: gray}
-a:active {color: black}
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav{
+    margin-top: 70px
+  }
+}
