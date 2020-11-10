@@ -1,6 +1,18 @@
 * {
   box-sizing: border-box;
 }
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 body {
   font-family: 'Baloo Tammudu 2', serif; /*Font from google library*/
 }
@@ -8,23 +20,23 @@ body {
 header{
     background-color: black;  /*Nice contrasting black background for the header*/
     color: white;
+    display: flex;
     padding-top: 10px;
     padding-left: 10px;
-    height: 110px;
-    position: relative;
+    /*height: 110px;
+    position: relative;*/
 }
 
 nav {
-  position:absolute;  /*Nav bar that stands out from the header*/
-  bottom:0px;
-  right:0px;
+  display: flex;  /*Nav bar that stands out from the header*/
+  justify-self: end;
   border: 1px black solid;
   text-align: center;
 }
 
 h2{
   margin-bottom: 0px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 main{  /*The bulk of the page, designed to fill the entire display, minus the header and the footer*/
@@ -39,16 +51,16 @@ main{  /*The bulk of the page, designed to fill the entire display, minus the he
 
 p {
   margin: 0px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 ul {
   text-align: left;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 ol {
-  font-size: 30px;
+  font-size: 20px;
 }
 main section{ /*White boxes with black borders designed to store content stylishly*/
   /*position: absolute;
@@ -75,7 +87,7 @@ h4{
 }
 
 h1{
-  font-size: 50px;
+  font-size: 40px;
   margin: 0px;
 }
 article h3{
@@ -87,10 +99,7 @@ article h3{
   padding-top: 10px;
 }
 
-.wrapper{
-  display: flex;
-  flex-direction: column;
-}
+
 .item-half{
   flex: 0.5;
   margin: 50px;
@@ -117,6 +126,20 @@ main img{
 }
 
 @media all and (min-width: 800px){
+  header h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 40px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+
+  li{
+    font-size: 25px;
+  }
   .wrapper{
     display: flex;
     flex-direction: row;
