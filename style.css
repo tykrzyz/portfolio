@@ -59,6 +59,7 @@ main{
   background-size: cover;
   opacity: 100%;
   background-color: #cccccc;
+  padding-bottom: 30px;
 }
 
 main div{
@@ -87,7 +88,7 @@ footer{   /*Just enough space to fit external comunnication icons*/
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  padding-top: 10px;
+  padding: 0px;
 }
 
 footer ul{
@@ -137,8 +138,13 @@ footer ul:last-child{
   margin-bottom: 0;
 }
 
+
 main img{
   width: 70%;
+}
+
+.small{
+  width: 10px;
 }
 
 @media all and (min-width: 800px){
