@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      body {
-        font-family: 'Baloo Tammudu 2', serif;
-      }
-    </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Tyler Krzyzanowski</title>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2">
-    <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-          rel="stylesheet"
-          type="text/css"/>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <header>
+<head>
+  <style>
+    body {
+      font-family: 'Baloo Tammudu 2', serif;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tyler Krzyzanowski</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Tyler Krzyzanowski</h1>
+      <h2>Full Stack Developer</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrapper center">
+    <div class="item-half border">
+      <form class="column-wrapper" action="https://formspree.io/f/meqpzqlw" method="POST">
+        <div class="item">
+          <label>Your name:</label>
+          <input type="text" name="name">
+        </div>
+        <div class="item">
+          <label>
+            Your email:</label>
+          <input type="text" name="_replyto">
+        </div>
+        <div class="item">
+          <label class="top">
+            What you are looking for:</label>
+          <textarea name="message" cols=50 rows=5></textarea>
+        </div>
         <div>
-            <h1>Tyler Krzyzanowski</h1>
-            <h2>Full Stack Developer</h2>
+          <button type="submit">Send</button>
         </div>
-        <nav>
-          <ul>
-            <li><a href= "index.html">About Me</a></li>
-            <li><a href= "projects.html">Projects</a></li>
-            <li><a href= "contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
-      </header>
+      </form>
+    </div>
+  </main>
 
-    <main class= "wrapper center">
-        <div class= "item-half border">
-        <form class= "column-wrapper"
-         action="https://formspree.io/f/meqpzqlw"
-        method="POST">
-            <label class= "item">Your name: 
-                <input type="text" name="name"></label>
-            <label class="item">
-                 Your email:
-                <input type="text" name="_replyto">
-            </label>
-            <label class="item">
-                What you are looking for:
-                <textarea name="message"></textarea>
-            </label>
-
-  <!-- your other form fields go here -->
-
-            <button type="submit">Send</button>
-        </form>
-        </div>
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="mailto:tykrzyz@aim.com"> <img src="images/icons/email-icon.png" alt="E-Mail"></a><li>
-            <li><a href="https://www.github.com/tykrzyz" target="_blank"><img src="images/icons/github-icon.png" alt="GitHub"></a></li>
-            <li><a href="https://www.linkedin.com/in/tyler-krzyzanowski" target="_blank"><img src="images/icons/linkedin-icon.png" alt="LinkedIn"></a></li>
-        <!--<h4>Email Me: <a href="mailto:tykrzyz@aim.com">tykrzyz@aim.com</a>
+  <footer>
+    <ul>
+      <li><a href="mailto:tykrzyz@aim.com"> <img src="images/icons/email-icon.png" alt="E-Mail"></a>
+      <li>
+      <li><a href="https://www.github.com/tykrzyz" target="_blank"><img src="images/icons/github-icon.png"
+            alt="GitHub"></a></li>
+      <li><a href="https://www.linkedin.com/in/tyler-krzyzanowski" target="_blank"><img
+            src="images/icons/linkedin-icon.png" alt="LinkedIn"></a></li>
+      <!--<h4>Email Me: <a href="mailto:tykrzyz@aim.com">tykrzyz@aim.com</a>
             Find Me On Github: </h4>-->
-        </ul>
-    </footer>
-  </body>
+    </ul>
+  </footer>
+</body>

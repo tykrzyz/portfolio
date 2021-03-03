@@ -118,6 +118,11 @@ footer ul:last-child{
   flex: 2;
 }
 
+textarea{
+  padding: 5px;
+  line-height: 16px;
+}
+
 .border{
   border: 5px gray solid;
   border-radius: 10px;
